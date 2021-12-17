@@ -1,10 +1,43 @@
 .container {
   background-color: rgb(12, 21, 31);
   color: rgba(185, 215, 255, .5);
+  display: flex;
+  flex-flow: row wrap;
   font-family: "Mulish","Helvetica Neue",Arial,sans-serif;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y proximity;
+}
+
+.navigation {
+  align-self: center;
+  font-size: .8em;
+  font-weight: bold;
+  position: fixed;
+  width: 20em;
+}
+
+@media (pointer: coarse) {
+  .navigation {
+    display: none;
+  }
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu_item {
+  margin: 2em 0;
+}
+
+.button {
+  border: 1.5px solid currentColor;
+  border-radius: 5px;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 1em;
+  padding: .3em .5em .45em;
 }
 
 .main {
@@ -17,16 +50,20 @@
 }
 
 .footer {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  justify-content: center;
+  align-self: flex-end;
+  line-height: 1;
+  margin-left: 2em;
   padding: 2rem 0;
+  width: 20em;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    position: fixed;
+  }
 }
 
 .footer a {
-  align-items: center;
-  display: flex;
   flex-grow: 1;
   font-weight: bold;
   justify-content: center;
