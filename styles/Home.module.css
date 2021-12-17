@@ -14,7 +14,7 @@
   font-size: .8em;
   font-weight: bold;
   position: fixed;
-  width: 20em;
+  width: 12em;
 }
 
 @media (pointer: coarse) {
@@ -25,6 +25,7 @@
 
 .menu {
   list-style: none;
+  padding-left: 2em;
 }
 
 .menu_item {
@@ -53,8 +54,8 @@
   align-self: flex-end;
   line-height: 1;
   margin-left: 2em;
-  padding: 2rem 0;
-  width: 20em;
+  padding: 2rem 0 5vh;
+  width: 12em;
 }
 
 @media (min-width: 768px) {
@@ -75,17 +76,20 @@
   flex-flow: column;
   justify-content: center;
   height: 100vh;
+  padding-left: 10em;
   scroll-snap-align: start;
   width: 100vw;
 }
 
 .image {
-  max-height: calc(90vh - 2.1em);
+  max-height: 90vh;
   max-width: 90vw;
 }
 
 .location {
-  justify-self: flex-end;
-  height: 1.1em;
-  margin: 1em 0 0;
+  align-self: flex-start;
+  height: 0;
+  justify-self: flex-start;
+  margin: 5vh 0 -5vh 2em;
+  width: 8em;
 }

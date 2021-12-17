@@ -50,12 +50,14 @@ export default function Home({ data }) {
         {
           data.allPhotos.map((item, key) => {
             return (
-              <article className={styles.photo} key={key}>
-                <img src={`${item.image.url}?max-h=1920&max-w=1080`} className={styles.image} />
+              <>
                 <p className={styles.location}>
                   {item.location}
                 </p>
-              </article>
+                <article className={styles.photo} key={key}>
+                  <img src={`${item.image.url}?max-h=1920&max-w=1080`} className={styles.image} />
+                </article>
+              </>
             )
           })
         }
