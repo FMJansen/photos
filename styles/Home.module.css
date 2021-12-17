@@ -62,6 +62,14 @@
   .footer {
     position: fixed;
   }
+
+  .photo {
+    padding-left: 10em;
+  }
+
+  .location {
+    width: 8em;
+  }
 }
 
 .footer a {
@@ -76,7 +84,6 @@
   flex-flow: column;
   justify-content: center;
   height: 100vh;
-  padding-left: 10em;
   scroll-snap-align: start;
   width: 100vw;
 }
@@ -91,5 +98,4 @@
   height: 0;
   justify-self: flex-start;
   margin: 5vh 0 -5vh 2em;
-  width: 8em;
 }
