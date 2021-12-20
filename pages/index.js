@@ -3,8 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { request } from '../lib/datocms';
 
-const HOMEPAGE_QUERY = `query HomePage($limit: IntType ) {
-  allPhotos(first: $limit) {
+const HOMEPAGE_QUERY = `query HomePage($limit: IntType) {
+  allPhotos(first: $limit, orderBy: createdAt_DESC) {
     location
     image {
       url
