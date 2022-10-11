@@ -41,7 +41,7 @@ export default function Home({ data }) {
                   {item.location}
                 </p>
                 <article className={styles.photo} key={key}>
-                  <img src={`photos/${item.filename}`} className={styles.image} />
+                  <img src={`photos/${item.filename}`} className={styles.image} loading="lazy" />
                 </article>
               </>
             )
