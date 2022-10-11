@@ -1,24 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { request } from '../lib/datocms';
-
-const HOMEPAGE_QUERY = `query HomePage($limit: IntType) {
-  allPhotos(first: $limit, orderBy: createdAt_DESC) {
-    location
-    image {
-      url
-    }
-  }
-}`;
+import { request } from '../lib/files';
 
 export async function getStaticProps() {
-  const data = await request({
-    query: HOMEPAGE_QUERY,
-    variables: {
-      limit: 100
-    }
-  });
+  const data = await request();
   return {
     props: { data }
   };
@@ -48,14 +34,14 @@ export default function Home({ data }) {
 
       <main className={styles.main}>
         {
-          data.allPhotos.map((item, key) => {
+          data.map((item, key) => {
             return (
               <>
                 <p className={styles.location}>
                   {item.location}
                 </p>
                 <article className={styles.photo} key={key}>
-                  <img src={`${item.image.url}?max-h=1920&max-w=1080`} className={styles.image} />
+                  <img src={`photos/${item.filename}`} className={styles.image} />
                 </article>
               </>
             )
