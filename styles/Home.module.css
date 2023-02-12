@@ -1,9 +1,19 @@
+@font-face {
+	font-display: swap;
+	font-family: "Satoshi";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""),
+		url("/Satoshi-Regular.woff2") format("woff2"),
+		url("/Satoshi-Regular.woff") format("woff");
+}
+
 .container {
   background-color: rgb(12, 21, 31);
-  color: rgba(185, 215, 255, .5);
+  color: rgba(254, 225, 194, .7);
   display: flex;
   flex-flow: row wrap;
-  font-family: "Mulish","Helvetica Neue",Arial,sans-serif;
+  font-family: "Satoshi", "Inter", "Helvetica Neue", Arial, sans-serif;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -63,7 +73,6 @@
 
 .footer a {
   flex-grow: 1;
-  font-weight: bold;
   justify-content: center;
 }
 
