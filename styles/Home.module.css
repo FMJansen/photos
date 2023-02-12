@@ -9,92 +9,92 @@
 }
 
 .container {
-  background-color: rgb(12, 21, 31);
-  color: rgba(254, 225, 194, .7);
-  display: flex;
-  flex-flow: row wrap;
-  font-family: "Satoshi", "Inter", "Helvetica Neue", Arial, sans-serif;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+	background-color: rgb(12, 21, 31);
+	color: rgba(254, 225, 194, .7);
+	display: flex;
+	flex-flow: row wrap;
+	font-family: "Satoshi", "Inter", "Helvetica Neue", Arial, sans-serif;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
 }
 
 .navigation {
-  align-self: center;
-  background: none;
-  border: 1.5px solid currentColor;
-  border-radius: 5px;
-  color: rgba(254, 225, 194, .7);
-  font-size: .8em;
-  font-weight: normal;
-  line-height: 1;
-  margin-left: 2em;
-  padding: .45em .55em .45em;
-  position: fixed;
+	align-self: center;
+	background: none;
+	border: 1.5px solid currentColor;
+	border-radius: 5px;
+	color: rgba(254, 225, 194, .7);
+	font-size: .8em;
+	font-weight: normal;
+	line-height: 1;
+	margin-left: 2em;
+	padding: .45em .55em .45em;
+	position: fixed;
 }
 
 @media (pointer: coarse) {
-  .navigation {
-    display: none;
-  }
+	.navigation {
+		display: none;
+	}
 }
 
 .main {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
 }
 
 .footer {
-  align-self: flex-end;
-  line-height: 1;
-  margin-left: 2em;
-  padding: 2rem 0 5vh;
-  width: 12em;
+	align-self: flex-end;
+	line-height: 1;
+	margin-left: 2em;
+	padding: 2rem 0 5vh;
+	width: 12em;
 }
 
 @media (min-width: 768px) {
-  .footer {
-    position: fixed;
-  }
+	.footer {
+		position: fixed;
+	}
 
-  .photo {
-    padding-left: 10em;
-  }
+	.photo {
+		padding-left: 10em;
+	}
 
-  .location {
-    width: 8em;
-  }
+	.location {
+		width: 8em;
+	}
 }
 
 .footer a {
-  flex-grow: 1;
-  justify-content: center;
+	flex-grow: 1;
+	justify-content: center;
 }
 
 .photo {
-  align-items: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  height: 100vh;
-  scroll-snap-align: start;
-  width: 100vw;
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	height: 100vh;
+	scroll-snap-align: start;
+	width: 100vw;
 }
 
 .image {
-  max-height: 90vh;
-  max-width: 90%;
+	max-height: 90vh;
+	max-width: 90%;
 }
 
 .location {
-  align-self: flex-start;
-  height: 0;
-  justify-self: flex-start;
-  margin: 5vh 0 -5vh 2em;
+	align-self: flex-start;
+	height: 0;
+	justify-self: flex-start;
+	margin: 5vh 0 -5vh 2em;
 }
