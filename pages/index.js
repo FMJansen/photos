@@ -12,25 +12,15 @@ export async function getStaticProps() {
 
 export default function Home({ data }) {
   return (
-    <div className={styles.container}>
+    <div id="photos" className={styles.container}>
       <Head>
         <title>Photos - Floris Jansen</title>
         <meta name="description" content="Photos by Floris Jansen." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className={styles.navigation}>
-        <menu className={styles.menu}>
-          <li className={styles.menu_item}>
-            Previous:
-            <p><span className={styles.button}>Shift</span> + <span className={styles.button}>Space</span></p>
-          </li>
-          <li className={styles.menu_item}>
-            Next:
-            <p><span className={styles.button}>Space</span></p>
-          </li>
-        </menu>
-      </nav>
+
+      <button className={styles.navigation} onClick={() => document.getElementById('photos').scrollTo({top: document.getElementById('photos').scrollTop + window.innerHeight, behavior: 'smooth'})}>↓</button>
 
       <main className={styles.main}>
         {

@@ -12,34 +12,22 @@
 
 .navigation {
   align-self: center;
+  background: none;
+  border: 1.5px solid currentColor;
+  border-radius: 5px;
+  color: rgba(254, 225, 194, .7);
   font-size: .8em;
-  font-weight: bold;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: 2em;
+  padding: .45em .55em .45em;
   position: fixed;
-  width: 12em;
 }
 
 @media (pointer: coarse) {
   .navigation {
     display: none;
   }
-}
-
-.menu {
-  list-style: none;
-  padding-left: 2em;
-}
-
-.menu_item {
-  margin: 2em 0;
-}
-
-.button {
-  border: 1.5px solid currentColor;
-  border-radius: 5px;
-  font-weight: normal;
-  line-height: 1;
-  margin-top: 1em;
-  padding: .3em .5em .45em;
 }
 
 .main {
